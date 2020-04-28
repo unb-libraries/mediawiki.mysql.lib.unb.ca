@@ -29,9 +29,11 @@ spec:
         tier: database
         uri: mediawiki.mysql.lib.unb.ca
         vcsOwner: unb-libraries
-        vcsRepository: mysql.lib.unb.ca
+        vcsRepository: mediawiki.mysql.lib.unb.ca
         vcsRef: prod
     spec:
+      nodeSelector:
+        deployenv: prod
       containers:
         -
           env:
