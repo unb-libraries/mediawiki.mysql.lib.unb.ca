@@ -57,7 +57,7 @@ spec:
       priorityClassName: vip-essential
       imagePullSecrets:
         -
-          name: docker-hub-auth
+          name: github-container-registry-auth
       restartPolicy: Always
       volumes:
         -
